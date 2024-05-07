@@ -11,10 +11,10 @@ function App() {
         <Router>
           <Header />
             <Routes>
-                <Route path='imdb_react_app/' element={<Home />}></Route>
-                <Route path="imdb_react_app/movie/:id" element={<Movie />}></Route>
-                <Route path="imdb_react_app/movies/:type" element={<MovieList />}></Route>
-                <Route path="imdb_react_app/*" element={<h1>Error Page</h1>}></Route>
+                <Route path='/' element={<Home />}></Route>
+                <Route path="/:id" element={<Movie />}></Route>
+                <Route path="/:type" element={<MovieList />}></Route>
+                <Route path="/*" element={<h1>Error Page</h1>}></Route>
             </Routes>
         </Router>
     </div>
